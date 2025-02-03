@@ -1,4 +1,4 @@
-package com.beats.testing;
+package com.beats.testing.Controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
