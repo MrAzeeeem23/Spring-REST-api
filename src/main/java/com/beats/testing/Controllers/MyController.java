@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MyController {
 
+    @GetMapping("/")
+    public String defaultRoute(){
+        return "this is default route, use /getResponse in";
+    }
     @GetMapping("/getResponse")
     public String getResponse(){
         return "this is a testing text from spring boot";
