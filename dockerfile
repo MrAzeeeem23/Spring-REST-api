@@ -1,6 +1,6 @@
 # Use an official OpenJDK runtime as a parent image
 FROM openjdk:21-jdk
-# without aplpine suffix to force it to run JDK 21
+# without alpine suffix to force it to run JDK 21
 
 # Set the working directory inside the container
 WORKDIR /src/main/java/com.beats.testing/TestingApplication
@@ -9,7 +9,7 @@ WORKDIR /src/main/java/com.beats.testing/TestingApplication
 COPY target/testing-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the application port (usually 8080 for Spring Boot)
-EXPOSE 9998
+EXPOSE 8899
 
 # Run the JAR file
 CMD ["java", "-jar", "app.jar"]
